@@ -1,7 +1,7 @@
 <!--
  * @Description:
  * @Date: 2025-05-16 16:19:42
- * @LastEditTime: 2025-05-16 20:08:06
+ * @LastEditTime: 2025-05-16 20:11:54
 -->
 
 npm login(username,password,email)，登陆
@@ -12,6 +12,13 @@ npm unpublish --force，一天内实在要删除加--force 强制删除，即使
 npm deprecate preject "message"，这个代替 unpublish 的弊端，不会撤销一个包，但是会在用户尝试安装这个包的时候提示信息，比较优雅，升级或者降级版本
 
 npm version 自动控制版本号
-+major：主版本号的更新//1.0.3 ,并会自动更新到远程仓库
-+minor：次版本号的更新//0.1.3
-+patch：布丁号//0.0.4
+npm version major：主版本号的更新//1.0.3 ,并会自动更新到远程仓库，再用 npm publish 进行发布
+npm version minor：次版本号的更新//0.1.3
+npm version patch：布丁号//0.0.4
+
+npm version pre 预发布
+npm version premajor：主版本号的更新//1.0.3-0 ,并会自动更新到远程仓库
+npm version preminor：次版本号的更新//0.1.3-0
+npm version prepatch：布丁号//0.0.4-0
+
+npm version prerelease 预发布环境下一个版本，1.0.3-1
