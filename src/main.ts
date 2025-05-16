@@ -1,10 +1,9 @@
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
-import components from "./components/index";
+import myPlugin from "../packages/index";
 
 const app = createApp(App);
 
-app.use(components);
+app.use(myPlugin);
 
 app.mount("#app");
